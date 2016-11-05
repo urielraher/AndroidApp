@@ -13,8 +13,62 @@
     tools:context="com.example.a41.imcaplication.MainActivity"
     tools:showIn="@layout/activity_main">
 
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textEditPeso"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEditAltura"
+            android:inputType="number"
+            android:maxLength="3"
+
+            android:hint="@string/altura"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/textEditMasa"
+            android:layout_alignLeft="@+id/textEditMasa"
+            android:layout_alignStart="@+id/textEditMasa" />
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/textEditPeso"
+        android:maxLength="3"
+        android:layout_margin="20dp"
+        android:hint="@string/peso"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textTitulo"
+        android:layout_centerHorizontal="true" />
+
+
+
     <TextView
+        android:id="@+id/textTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/titulo"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultado"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
